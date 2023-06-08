@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
+
+* {
+
+  margin: 0;
+  scroll-behavior: smooth;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  
+  font-family: 'Montserrat', sans-serif;
+  }
+
+/* Estilos para o cabeçalho e navegação */
+header {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  padding: 1rem;
+}
+
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
+}
+
+nav li {
+  display: inline;
+  margin-right: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #0d445d;
+  font-weight: bold;
+  padding: 1rem;
+  font-size: 1.6rem;
+}
+nav a:hover {
+  background-color: #ccc;
+}
+
+/* Estilos para a seção principal */
+#hero {
+  background-image: url('../img/pexels-tobias-bjørkli-1819650.jpg');
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  color: #fff;
+  margin-left: 8rem;
+}
+.hero-content h1 {
+  font-size: 7rem;
+  margin-bottom: 3.2rem;
+}
+
+.hero-content p {
+  font-size: 2.4rem;
+  margin-bottom: 3.2rem;
+}
+.hero-content img {
+  width: 5.0rem;
+  height: 5.0rem;
+  margin: 3.2rem;
+}
+.hero-content img:hover {
+  transform: scale(1.1);
+}
+
+.cta-button {
+  width: 10rem;
+  border-radius: 2rem;
+  padding: 1rem;
+  border: none;
+  color: #0d445d;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: #fff;
+  text-decoration: none;
+  font-size: 1.6rem;
+ }
+.cta-button:hover {
+  background-color: #0d445d;
+  color: #fff;
+  transition: 1s;
+}
+
+/* Estilos para a seção "Sobre mim" */
+#about {
+  width: 100%;
+  height: 100vh;
+  transition: 2s;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid black;
+}
+
+.about-content {
+  text-align: center;
+}
+.about-content p{
+  width: 100%;
+  max-width: 98rem;
+  margin: 7rem auto;
+  font-size: 2.4rem;
+  color: #0d445d;
+}
+
+.about-content h2 {
+  font-size: 2.6rem;
+  margin: 6rem;
+  color: #0d445d;
+}
+
+.about-content button{
+  margin: 3.2rem 6.4rem;
+  width: 16rem;
+  border-radius: 3.2rem;
+  padding: 1.6rem;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: #0d445d;
+  color: #fff;
+}
+
+
+button.active{
+  background-color: #0d445d;;
+  color: #fff;
+  border: 2px solid black;
+}
+.about-content img {
+  width: 7.2rem;
+  height: 7.2rem;
+  margin: 3.2rem 6.4rem;
+  transition: transform 0.3s;
+}
+
+.about-content img:hover {
+  transform: scale(1.1);
+}
+
+/* Estilos para a seção "Projetos" */
+#projects {
+  background-color: #fff;
+  height: 75rem;
+  padding: 0.8rem;
+ 
+}
+#projects h2{
+  margin: 6.4rem;
+  font-size: 2.6rem;
+}
+.cards { 
+  display: flex;
+  justify-content: space-around;
+}
+.card {
+  text-align: center;
+  border: 1px solid #0d445d;
+  width: 21rem;
+  height: 42rem;
+  padding: 5.4rem;
+  background-color: #c3cfd4;
+  border-radius: 10%;
+}
+
+.card img {
+  width: 20rem;
+  height: 20rem;
+}
+.card h3 {
+  margin: 1.6rem;
+  color: #0d445d;
+  font-size: 1.6rem;
+}
+.card p {
+  color: #0d445d;
+  margin-bottom: 1.6rem;
+  font-size: 1.6rem;
+}
+.card button {  
+  margin: 1.6rem;
+  width: 14rem;
+  border-radius: 2rem;
+  padding: 0.7rem;
+  border: none;
+  color: #0d445d;
+  font-weight: 700;
+  cursor: pointer;
+}
+.card button:hover {
+  color:#fff ;
+  background-color:#0d445d;
+}
+
+
+
+/*Formulário */
+#contact {
+  background-color: #fff;
+  padding: 3.2rem;
+  border-top: 1px solid #ccc;
+  height: 65rem;
+  
+}
+
+.contact-content {
+  max-width: 100vw;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  color: #0d445d;
+  margin: 6.4rem;
+  font-size: 2.6rem;
+  
+}
+label {
+  color: #0d445d;
+  margin-top: 1.6rem;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 1.6rem;
+  margin-bottom: 1.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 50rem;
+  background-color: #c3cfd4;
+}
+
+.contact-content button {
+  margin: 3.2rem 0;
+  width: 20rem;
+  border-radius: 2rem;
+  padding: 1.2rem;
+  border: none;
+  color: #fff;
+  background-color: #0d445d;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+
+.contact-content button:hover {
+  background-color: #175b7b;
+}
+
+
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #0d445d;
+  transition: 0.3s;
+  box-shadow: 0.3s;
+  }
+
+/* Estilos para o rodapé */
+footer {
+  border-top: 1px solid #0d445d;
+  background-color: #c3cfd4;
+  color: #0d445d;
+  font-weight: 700;
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+
+
+@media (max-width: 1440px){
+  #contact {
+    height: 65rem;
+    
+  }
+  #projects {
+    height: 75rem; 
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 468px) {
+
+  #hero {
+    align-items: center;
+    text-align: center;
+  }
+  #about {
+    height: 80vh;    
+  }
+  .about-content p{
+    font-size: 2.2rem;
+  }
+  
+  .about-content h2 {
+    margin: 4rem;
+  }
+  
+  .about-content button{
+    margin: 2rem 3.2rem;
+    width: 14rem;
+    border-radius: 3rem;
+    padding: 1rem;
+  }
+
+  .about-content img {
+    width: 6.5rem;
+    height: 6.5rem;
+    margin: 2.5rem 5.6rem;
+  }
+  #projects {
+    background-color: #fff;
+    height: 115rem;
+    padding: 0.8rem;
+   
+  }
+  .card {
+    width: 18rem;
+    height: 34rem;
+    margin-bottom: 2rem;
+  }
+  .cards { 
+    align-items: center;
+    flex-direction: column;
+  }
+  .card img {
+    width: 14rem;
+    height: 14rem;
+  }
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 35rem;
+}
+
+}
+@media (max-width: 400px) {
+
+  .hero-content h1 {
+    font-size: 6rem;
+    margin-bottom: 2.4rem;
+  }
+  
+  .hero-content p {
+    font-size: 2rem;
+    margin-bottom: 1.3rem;
+  }
+
+  
+}
+@media (max-width: 330px) {
+  .hero-content { 
+    margin-left: 4rem;
+  }
+  
+  .about-content p{
+    margin: 4rem auto;
+    
+    
+  }
+  
+  .about-content img {
+    margin: 1.5rem 4rem;
+  }
+}

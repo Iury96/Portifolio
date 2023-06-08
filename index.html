@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="icon" href="img/cliente.png">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre mim</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Iury</h1>
+            <p>Desenvolvedor Web Front-End</p>
+            <a href="https://github.com/Iury96" target="_blank"><img src="./img/github.png" alt="Github logo"></a>
+            <a href="https://www.linkedin.com/in/iury-freitas-382018227/" target="_blank"><img src="./img/linkedin.png"
+                    alt="Linkedin logo"></a>
+            <br><br>
+            <a href="./pdf/Iury.pdf" class="cta-button" target="_blank">Baixe o meu currículo</a>
+        </div>
+    </section>
+    <section id="about">
+        <div class="about-content">
+            <h2>Sobre mim</h2>
+            <button id="click" onclick="sobre()">Sobre</button>
+            <button id="clica" onclick="projetos()">Skills</button>
+            <p id="resultado"></p>
+        </div>
+    </section>
+    <section id="projects">
+        <h2>Projetos</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="./img/mentor.png" alt="">
+                <h3>Projeto 1</h3>
+                <p>Desafio do site Front-End Mentor. HTML, CSS e JS.</p>
+                <a href="https://github.com/Iury96/projeto-js" target="_blank"><button>Repositório</button></a>
+                <a href="https://iury96.github.io/projeto-js/" target="_blank"><button>Deploy</button></a>
+            </div>
+
+
+
+            <div class="card">
+                <img src="./img/contador.png" alt="">
+                <h3>Projeto 2</h3>
+                <p>Contador de palavras. HTML, CSS e JS.</p>
+                <a href="https://github.com/Iury96/contador" target="_blank"><button>Repositório</button></a>
+                <a href="https://iury96.github.io/contador/" target="_blank"><button>Deploy</button></a>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="contact-content">
+            <h2>Entre em contato</h2>
+            <form target="_blank" action="https://formsubmit.co/iury.freitas961@gmail.com" method="POST">
+                <label for="name">Nome</label>
+                <input type="text" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" name="email" required>
+                <label for="mensagem">Mensagem</label>
+                <textarea name="message"></textarea>
+                <button type="submit">Enviar</button>
+
+                
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2023 Iury. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
